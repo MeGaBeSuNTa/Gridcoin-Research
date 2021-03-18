@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2020 The Gridcoin developers
+// Copyright (c) 2014-2021 The Gridcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -678,7 +678,7 @@ void BeaconRegistry::Revert(const ContractContext& ctx)
     //
     // In beacons, the only use-case for contract actions of remove are the beacon revocation or the old style
     // direct deletes for v1 contracts. In this case we need to resurrect the previous record pointed to by the
-    // deleted record in the beacon db. This could be an ACTIVE, RENWAL, or PENDING record. The EXPIRED_PENDING
+    // deleted record in the beacon db. This could be an ACTIVE, RENEWAL, or PENDING record. The EXPIRED_PENDING
     // records are handled in the Deactivate function, which is the block level Revert for the superblock reversion.
     if (ctx->m_action == ContractAction::REMOVE)
     {

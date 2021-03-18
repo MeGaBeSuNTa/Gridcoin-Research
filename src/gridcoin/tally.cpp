@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2020 The Gridcoin developers
+// Copyright (c) 2014-2021 The Gridcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -463,7 +463,7 @@ public:
     //!
     //! \brief Erase the snapshot files and clear the registry.
     //!
-    //! \return \c false if the snapshots and registery deletion failed because
+    //! \return \c false if the snapshots and registry deletion failed because
     //! of an error.
     //!
     bool EraseSnapshots()
@@ -972,7 +972,7 @@ CAmount Tally::GetNewbieSuperblockAccrualCorrection(const Cpid& cpid, const Supe
 
     CAmount accrual = 0;
 
-    // This lambda is almost a straight lift from the auditsnapshotaccrual RPC function. It is simplifed,
+    // This lambda is almost a straight lift from the auditsnapshotaccrual RPC function. It is simplified,
     // because since the accrual account doesn't exist, there has been no staking for this CPID and no payout,
     // so only superblock to superblock periods need to be considered.
     const auto tally_accrual_period = [&](

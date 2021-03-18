@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2020 The Gridcoin developers
+// Copyright (c) 2014-2021 The Gridcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -83,7 +83,7 @@ void InitializeContracts(CBlockIndex* pindexBest)
 
     BeaconRegistry& beacons = GetBeaconRegistry();
 
-    // If the clearbeaconhistory argument is provided, then clear everthing from the beacon registry,
+    // If the clearbeaconhistory argument is provided, then clear everything from the beacon registry,
     // including the beacon_db and beacon key type elements from leveldb.
     if (GetBoolArg("-clearbeaconhistory", false))
     {

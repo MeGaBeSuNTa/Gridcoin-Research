@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2020 The Gridcoin developers
+// Copyright (c) 2014-2021 The Gridcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -194,7 +194,7 @@ const CBlockIndex* GetBeaconConsensusHeight()
 }
 
 //!
-//! \brief Get beacon list with consenus.
+//! \brief Get beacon list with consensus.
 //!
 //! Assembles a list of only active beacons with a consensus lookback from
 //! 6 months ago the current tip minus ~1 hour.
